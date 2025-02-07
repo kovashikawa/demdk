@@ -12,7 +12,7 @@ your company provides a feature that allows users to schedule recurring allowanc
 you are given data reflecting all recorded events and backend table states up to `2024-12-03`. your task is to analyze the data and report inconsistencies.
 
 available datasets:
-![database schema](https://raw.githubusercontent.com/your-username/your-repo/main/path-to-your-image.png)
+![database schema](https://github.com/kovashikawa/demdk/blob/main/modak_db.png?raw=true)
 
 task
 
