@@ -1,6 +1,4 @@
 seaborn==0.12.2
-fastapi==0.95.2
-uvicorn[standard]==0.22.0
 pandas==2.2.2
 python-dateutil==2.8.2
 matplotlib==3.8.0
