@@ -64,3 +64,42 @@ for the logic of this code I made a few assumptions, as that the `biweekly` freq
 │
 └── 📜 requirements.txt     # Dependencies and setup
 ```
+
+---
+
+## how to run locally?
+
+to run the analysis locally, follow these steps:
+
+1. clone the repository
+
+```bash
+git clone https://github.com/kovashikawa/demdk.git
+cd demdk
+```
+
+2. create a venv
+
+```bash
+python3 -m venv venv
+source venv/bin/activate  # On macOS/Linux
+venv\Scripts\activate     # On Windows
+```
+
+3. install dependencies
+
+make sure you have python 3 installed, then install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. run jupyter:
+
+call it and open `demdk.ipynb`:
+
+```bash
+jupyter notebook
+```
+
+navigate to `demdk.ipynb` and execute the cells.
