@@ -239,5 +239,8 @@ def plot_frequency_and_errors(check_field_df):
     # Ensure both y-axes are equal
     axes[1].set_ylim(axes[0].get_ylim())
 
+    # Save the figure
+    plt.savefig('images/freq_error.png', dpi=300)
+
     plt.tight_layout()
     plt.show()
