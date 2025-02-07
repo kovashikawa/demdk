@@ -27,21 +27,19 @@ using the `allowance_events` dataset as the source of truth, analyze the data an
 
 ## findings
 
-you can see the main findings at the [demdk.ipynb](https://github.com/kovashikawa/demdk/blob/main/demdk.ipynb).
+you can see the main findings at the [demdk.ipynb](https://github.com/kovashikawa/demdk/blob/main/demdk.ipynb). includes visualizations and a data-driven analysis explaining where the errors are concentrated, as well as potential bugs outside the scope of this exercise.
 
-there we can find plots and data explaining were the errors were mostly concentrated and possible bugs outside the scope of this exercise.
-
-in summary, we can say that most of the errors were find in the `biweekly` and `weekly` frequencies. this means that is almost certain that we will find bugs in the backend code that made these updates:
+in summary, we can say that most of the errors were found in the `biweekly` and `weekly` frequencies. this means that it is almost certain that we will find bugs in the backend code that made these updates:
 
 ![freq_error_plot](https://github.com/kovashikawa/demdk/blob/main/images/freq_error.png?raw=true)
 
 it is worth mentioning that:
 
-* errors in the `daily` frequency are mostly because the table was not updated on the `CURRENT_DATE = 2024-12-03`
-* `biweekly` concentrated most of the errors, followed by the `weekly`
-* single `monthly` error is caused by similar issue on the relations of events logs, not the single one caused by this, as pointed out in the notebook
+* most inconsistencies were found in the `biweekly` and `weekly` payment frequencies, suggesting that the backend logic handling these updates may contain bugs
+* errors in the `daily` frequency mostly resulted from the table not being updated on `CURRENT_DATE = 2024-12-03`
+* the single observed `monthly` error was due to incorrect event log relations rather than the main issue affecting other frequencies (as discussed in the notebook).
 
-for the logic of this code I made a few assumptions, as that the `biweekly` frequency is supposed to be paid on the 1st and 3rd week of the month
+for the logic of this code I made the following assumption: the `biweekly` frequency is expected to trigger payments on the 1st and 3rd week of each month
 
 ---
 
@@ -102,4 +100,4 @@ call it and open `demdk.ipynb`:
 jupyter notebook
 ```
 
-navigate to `demdk.ipynb` and execute the cells.
+navigate to `demdk.ipynb` and execute
