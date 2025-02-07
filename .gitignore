@@ -1,0 +1,43 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Virtual environment
+venv/
+.env
+*.venv
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Cache files
+*.cache
+*.log
+
+# Environment files
+.env
+*.env
+*.ini
+*.toml
+
+# VS Code and JetBrains IDE settings
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Generated files
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.h5
+*.sqlite3
+*.db
+*.pkl
+*.joblib
