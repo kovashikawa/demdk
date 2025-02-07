@@ -25,4 +25,7 @@ using the `allowance_events` dataset as the source of truth, analyze the data an
 
 ## findings
 
-you can see the results at the 
+you can see the main findings at the [demdk.ipynb](https://github.com/kovashikawa/demdk/blob/main/demdk.ipynb).
+
+there we can finde plots and data explaining were the errors were mostly concentrated and possible bugs outside the scope of this exercise.
+
