@@ -19,9 +19,9 @@ available datasets:
 ### task
 
 using the `allowance_events` dataset as the source of truth, analyze the data and identify inconsistencies in `next_payment_day` and `payment_date`. create a detailed report describing:
-	•	discrepancies in the backend tables
-	•	patterns in the errors
-	•	potential causes and scope of the problem
+* discrepancies in the backend tables
+* patterns in the errors
+* potential causes and scope of the problem
 
 ---
 
@@ -39,7 +39,7 @@ it is worth mentioning that:
 
 * errors in the `daily` frequency are mostly because the table was not updated on the `CURRENT_DATE = 2024-12-03`
 * `biweekly` concentrated most of the errors, followed by the `weekly`
-* single `monthly` is caused by similar issue on the relations of events logs, not the single one caused by this, as pointed out in the notebook
+* single `monthly` error is caused by similar issue on the relations of events logs, not the single one caused by this, as pointed out in the notebook
 
 for the logic of this code I made a few assumptions, as that the `biweekly` frequency is supposed to be paid on the 1st and 3rd week of the month
 
